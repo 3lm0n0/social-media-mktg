@@ -1,0 +1,17 @@
+.work-container { 
+    display: flex;
+}
+.work-background-image {
+    background-size: cover;
+    background-position: center;
+}
+.work__img {
+    width: 100%;
+    height: 100%;
+}
+.work-aside {
+    max-width: 30vw;}
+.work-article {
+    max-width: 70vw;
+    overflow: hidden;
+}

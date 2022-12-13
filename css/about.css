@@ -1,0 +1,32 @@
+.about {
+    width: 100vw;
+    height: 50vh;
+}
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.background-image-about {
+    background-image: url("../assets/images/about.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.about-text-container {
+    padding: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+.about-text-title {
+    padding: 15px 3px;
+    text-align: left;
+    font-size: 1.85em;
+    font-weight: 600;
+}
+.about-text {
+    line-height: 1.7em;
+}

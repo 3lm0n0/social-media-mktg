@@ -1,0 +1,21 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+}
+.background-image-home {
+    background-image: url("../assets/images/home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.home-text-container {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}
+.home-text {
+    font-weight: 300;
+    text-align: right;
+    font-size: 1.85em;
+    text-rendering: optimizelegibility;
+    font-weight: lighter;
+}
