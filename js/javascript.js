@@ -17,10 +17,6 @@ document.addEventListener('mousemove', showImgContent);
 // Scroll To Top
 window.addEventListener('load', function () {
     document.getElementById('scrollTop').addEventListener('click', function () {
-        // window.scrollTo({
-        //     top: 0,
-        //     behavior: 'smooth'
-        // });
         var position =
             document.body.scrollTop || document.documentElement.scrollTop;
         if (position) {
@@ -28,4 +24,9 @@ window.addEventListener('load', function () {
             scrollAnimation = setTimeout("scrollToTop()", 2000);
         } else clearTimeout(scrollAnimation);
     });
+});
+
+// Current Year
+window.addEventListener('load', function () {
+    document.getElementById("year").innerHTML = new Date().getFullYear();
 });

@@ -20,6 +20,9 @@ body {
 .background-color-black {
     background-color: #000;
 }
+.background-color-gray {
+    background-color: #201e1e;
+}
 
 .padding-top-10 {
     padding-top: 10px;
@@ -30,6 +33,9 @@ body {
 }
 .padding-bottom-35 {
     padding-bottom: 35px;
+}
+.padding-15 {
+    padding: 15px;
 }
 
 .title {
