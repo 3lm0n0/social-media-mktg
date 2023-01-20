@@ -6,7 +6,9 @@
     <meta name="description" content="Marketing Influencers Agency">
     <meta name="keywords" content="Marketing Influencers Agency Social Media">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300%2C700%2C600%2C800%7CPT+Sans%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/home.css" />
@@ -19,13 +21,11 @@
     <header>
         <div id="brand"><a href="/">Falco Influence</a></div>
         <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/work">Work</a></li>
-                <li><a href="/whyus">Why Us</a></li>
-                <li><a href="/contact">Contact</a></li>
+            <ul class="expanded">
+                <li><a class="home-text" href="#about">About</a></li>
+                <li><a class="home-text" href="#work">Work</a></li>
+                <li><a class="home-text" href="#services">Services</a></li>
+                <li><a class="home-text" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -33,11 +33,9 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#whyus">Why Us</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -45,10 +43,10 @@
    
     <main id="home" class="home background-image-home">
         <aside class="home-text-container">
-            <h3 class="home-text">
+            <h3 class="home-text text-align-right">
                 We Are Falco Influence.<br>
                 Digital Marketing Artists.<br>
-                Let’s work together.
+                Let’s work <a href="mailto:contact@falcoinfluence.com">together</a>.
             </h3>
         </aside>
     </main>
@@ -56,8 +54,13 @@
     <section id="about" class="about about-grid-container">
         <article class="background-image-about"></article>
         <aside class="about-text-container">
-            <h2 class="about-text-title">WHO WE ARE.</h2>
-            <p class="about-text">
+            <h2 class="home-text text-align-center text-uppercase">ABOUT who we are.</h2>
+            <p class="body-text">
+                We are a global company.<br>
+                At Falco Influence we take care of the planning and execution of campaigns in their entirety.<br>
+                We assign specialized teams for each process.<br>
+                Experienced professionals with more than 10 years at the industry.<br>
+                We concern about delivering excellence.<br>
                 Doubtless one leading reason why the world declines honouring us whalemen, is this: they think that, at best, our
                 vocation amounts to a butchering sort of business; and that when actively engaged therein, we are surrounded by all
                 manner of defilements. Butchers we are, that is true. But butchers, also, and butchers of the bloodiest badge have been
@@ -68,82 +71,152 @@
         </aside>
     </section>
 
-    <section id="services" class="services-gallery margin-top-5">
-        <div class="gallery__item gallery__item--1 img-hover-zoom  img-hover-zoom-quick-zoom">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-1.jpg" class="services-gallery__img" alt="Image 1">
-            </figure>
+    <section id="work" class="work background-color-black padding-top-35">
+        <div class="padding-top-10">
+            <h2 class="home-text color-white text-align-center padding-top-10 text-uppercase">Our work philosophy</h2>
         </div>
-        <div class="gallery__item gallery__item--2 img-hover-zoom img-hover-zoom-quick-zoom">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-2.jpg" class="services-gallery__img img-hover-zoom--quick-zoom" alt="Image 2">
-            </figure>
-        </div>
-        <div class="gallery__item gallery__item--3 img-hover-zoom img-hover-zoom-quick-zoom">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-3.jpg" class="services-gallery__img img-hover-zoom--quick-zoom" alt="Image 3">
-            </figure>
-        </div>
-        <div class="gallery__item gallery__item--4 img-hover-zoom img-hover-zoom-quick-zoom">
-            <figure class="">
-                <video class="services-gallery__img" alt="Image 4" width="320" height="240" preload="metadata" autoplay controls loop src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/videos/video-4.mp4">
+        <div class="cards-container">
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3 class="home-text">Business understanding</h3>
+                        <p class="body-text">We work closely with our clients understanding their goals and planning the campaign on the correct direction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3 class="home-text">Multi-Deal Model</h3>
+                        <p class="body-text">Due to our multi-deal agreements, pricing understanding and negotiation skills we can get the best prices that will make the difference in the client profit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3 class="home-text">Real Data</h3>
+                        <p class="body-text">We work closely with Influencers and managers getting real data making sure they are a good match in terms of audience and CPM.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-                </video>
-            </figure>
-        </div>
-        <div class="gallery__item gallery__item--5 img-hover-zoom img-hover-zoom-quick-zoom">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-5.jpg" class="services-gallery__img img-hover-zoom--quick-zoom" alt="Image 5">
-            </figure>
-        </div>
-        <div class="gallery__item gallery__item--6 img-hover-zoom img-hover-zoom-quick-zoom">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-6.jpg" class="services-gallery__img img-hover-zoom--quick-zoom" alt="Image 6">
-            </figure>
+    <section id="services" class="gallery">
+        <div class="container">
+            <div class="grid">
+                <div class="column-xs-12 column-md-4">
+                    <figure class="img-container">
+                        <img class="img-services" src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-1.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="services-title">Smart Watch</h2>
+                            <h3 class="category">Showcase</h3>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="services-title">Smart Watch</h2>
+                            <h3 class="category">Showcase</h3>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-xs-12 column-md-4">
+                    <figure class="img-container">
+                        <img class="img-services" src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-2.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="services-title">Camera Film</h2>
+                            <h3 class="category">Showcase</h3>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="services-title">Camera Film</h2>
+                            <h3 class="category">Showcase</h3>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-xs-12 column-md-4">
+                    <figure class="img-container">
+                        <img class="img-services" src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-3.jpg">
+                        <figcaption class="img-content">
+                            <h2 class="services-title">Coffee</h2>
+                            <h3 class="category">Showcase</h3>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="services-title">Coffee</h2>
+                            <h3 class="category">Showcase</h3>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-xs-12 column-md-6">
+                    <figure class="img-container">
+                        <img class="img-services" src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-4.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="services-title">Phone</h2>
+                            <h3 class="category">Showcase</h3>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="services-title">Phone</h2>
+                            <h3 class="category">Showcase</h3>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-xs-12 column-md-6">
+                    <figure class="img-container">
+                        <img class="img-services" src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-5.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="services-title">Keyboard</h2>
+                            <h3 class="category">Showcase</h3>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="services-title">Keyboard</h2>
+                            <h3 class="category">Showcase</h3>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-xs-12">
+                    <figure class="img-container">
+                        <img class="img-services" src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/services-gallery/image-6.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="services-title">Wrist Watch</h2>
+                            <h3 class="category">Showcase</h3>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="services-title">Wrist Watch</h2>
+                            <h3 class="category">Showcase</h3>
+                        </span>
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="work" class="work">
-        <div class="work-container">
-            <article class="work-background-image work-article">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/work/image-1.jpg"
-                    class="work__img" alt="Image 1">
-            </article>
-            <aside class="work-aside">
-                <h2>REASONS TO JOIN</h2> <br>
-                <h2>03</h2> <br>
-                <h3>HAVE THE BEST ONLINE RESOURCES.</h3> <br><br>
-                <p>
-                    At the next halt Hooja the Sly One managed to find enough slack chain to permit him to worm himself back quite close to
-                    Dian. We were all standing, and as he edged near the girl.
-                </p>
-            </aside>
+    <section id="contact" class="contact padding-bottom-35">
+        <div>
+            <h2 class="home-text text-align-center text-uppercase">Contact us</h2>
         </div>
-        <div class="work__item work__item--2">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/work/image-2.jpg"
-                    class="work__img" alt="Image 2">
-            </figure>
-        </div>
-        <div class="work__item work__item--3">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/work/image-3.jpg"
-                    class="work__img" alt="Image 3">
-            </figure>
-        </div>
-        <div class="work__item work__item--4">
-            <figure class="">
-                <img src="/home/pedro/Documents/io-repos/experiments/falcoInfluence/assets/images/work/image-4.jpg"
-                    class="work__img" alt="Image 5">
-            </figure>
+        <div class="padding-top-35">
+                <h3 class="text-align-center">
+                    <a class="font-size-xx-large" href="mailto:contact@falcoinfluence.com">contact@falcoinfluence.com</a>
+                </h3>
         </div>
     </section>
 
-    <section id="whyus" class="whyus"></section>
-
-    <section id="contact" class="contact"></section>
-
-    <footer></footer>
+    <footer class="background-color-black padding-bottom-35">
+        <div class="padding-top-35 padding-bottom-35">
+            <ul class="">
+                <li><a class="home-text" href="#about">About</a></li>
+                <li><a class="home-text" href="#work">Work</a></li>
+                <li><a class="home-text" href="#services">Services</a></li>
+            </ul>
+        </div>
+        <div>
+            <a id="scrollTop" class="color-white uk-icon uk-totop uk-grid-margin uk-first-column" href="" uk-totop="">
+                <svg width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg" data-svg="totop">
+                    <polyline fill="none" stroke="#fff" stroke-width="1.2" points="1 9 9 1 17 9 "></polyline>
+                </svg>
+            </a>
+        </div>
+    </footer>
 </body>
 <script src="js/javascript.js"></script>
 </html>

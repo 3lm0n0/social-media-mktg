@@ -21,9 +21,12 @@ header {
     color: #fafafa;
 }
 
+ul.expanded {
+    height: 100%;
+}
+
 ul {
     list-style: none;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -79,11 +82,12 @@ ul li:hover {
 }
 
 .mobile-menu {
+    background-color: #1d1f1d;
     display: none;
     position: absolute;
     top: 50px;
     left: 0;
-    height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
     width: 100%;
 }
 
@@ -91,7 +95,7 @@ ul li:hover {
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     header nav {
         display: none;
     }
